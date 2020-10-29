@@ -1,0 +1,56 @@
+.terms {
+
+  &__wrapper {
+    position: relative;
+    padding: 60px 0 62px;
+    display: flex;
+    justify-content: space-between;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      background-color: #e8eaf3;
+    }
+  }
+
+  &__item {
+    color: #000000;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+
+    &--left {
+      margin-left: 86px;
+    }
+
+    &--right {
+      margin-right: 150px;
+    }
+
+    &:hover {
+      .terms__img {
+        filter: invert(100%);
+      }
+    }
+  }
+
+  &__img {
+    display: block;
+    margin-bottom: 31px;
+    width: 100%;
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: filter 0.3s;
+  }
+
+  &__accent {
+    color: $blue-text;
+  }
+}

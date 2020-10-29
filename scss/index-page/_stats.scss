@@ -1,0 +1,55 @@
+.stats {
+
+  &__wrapper {
+    background-color: rgba(13, 15, 19, 0.8);
+  }
+
+  &__inner {
+    padding: 96px 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__pic {
+    display: block;
+    margin-bottom: 44px;
+    width: 48px;
+    height: 48px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 36px;
+
+    &--briefcase {
+      color: #feb71d;
+    }
+
+    &--cloud {
+      color: #58c9e9;
+    }
+
+    &--smile {
+      color: #77de51;
+    }
+
+    &--users {
+      color: #ff6a6d;
+    }
+  }
+
+  &__text {
+    color: #ffffff;
+    font-size: 18px;
+  }
+}

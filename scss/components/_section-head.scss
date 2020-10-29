@@ -1,0 +1,55 @@
+.section-head {
+  width: 100%;
+  margin-bottom: 50px;
+  padding: 33px 30px 32px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+  border-radius: 4px;
+  background-color: #ffffff;
+
+  &__title {
+    color: #000000;
+    font-size: 30px;
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+  &__arrow {
+    background-color: $blue-text;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    outline: transparent;
+    transition: background-color 0.3s ease-in-out;
+
+    &:focus {
+      background-color: rgba(6, 116, 236, 0.7);
+    }
+
+    &:hover {
+      background-color: rgba(6, 116, 236, 0.7);
+    }
+
+    &:active {
+      background-color: rgba(6, 116, 236, 0.4);
+    }
+
+    &--left {
+      padding: 14px 20px 15px 21px;
+      border-radius: 23px 0 0 23px;
+    }
+
+    &--right {
+      padding: 14px 21px 15px 20px;
+      border-radius: 0px 23px 23px 0;
+    }
+  }
+}

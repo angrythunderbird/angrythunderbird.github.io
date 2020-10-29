@@ -1,0 +1,53 @@
+.choose {
+
+  &__title {
+    margin-bottom: 23px;
+  }
+
+  &__feature {
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    counter-reset: choose;
+  }
+
+  &__item {
+    position: relative;
+    margin-top: 30px;
+    padding-top: 4px;
+    padding-bottom: 53px;
+    box-shadow: 0 2px 50px rgba(0, 0, 0, 0.08);
+
+    &::before {
+      counter-increment: choose;
+      content: counter(choose) "";
+      position: absolute;
+      top: 20px;
+      left: 19px;
+      color: rgba(92, 135, 248, 0.2);
+      font-size: 48px;
+      font-weight: 300;
+    }
+
+    &:hover {
+      box-shadow: 0 2px 50px rgba(6, 116, 236, 0.4);
+    }
+  }
+
+  &__img {
+    display: block;
+    margin: 44px auto;
+    width: 60px;
+    height: 60px;
+  }
+
+  /* &__number {
+    position: absolute;
+    top: 20px;
+    left: 19px;
+    color: rgba(92, 135, 248, 0.2);
+    font-size: 48px;
+    font-weight: 300;
+    transition: color 0.3s;
+  } */
+}

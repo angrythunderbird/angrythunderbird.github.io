@@ -1,0 +1,133 @@
+.release {
+
+  &__nav {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 30px;
+  }
+
+  &__link {
+    align-items: center;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: #747b86;
+    cursor: pointer;
+    outline: transparent;
+
+    &:focus {
+      color: $blue-text;
+    }
+
+    &:hover {
+      color: $blue-text;
+    }
+
+    &:active {
+      color: $blue-text;
+    }
+  }
+
+  &__link-title {
+    display: inline-block;
+    margin-right: 25px;
+    padding-bottom: 3px;
+  }
+
+  &__dots {
+    display: inline-block;
+    width: 6px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__box {
+    position: absolute;
+    top: 88px;
+    right: 7px;
+    width: 183px;
+    display: none;
+    z-index: 12;
+  }
+
+  &__list {
+    @include list-reset;
+    position: relative;
+    padding: 12px 0px 12px 23px;
+    background-color: #fff;
+    box-shadow: 0 5px 40px rgba(82, 85, 90, 0.2);
+    border-radius: 3px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 100%;
+      right: 19px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 7px 12px 7px;
+      border-color: transparent transparent #fff transparent;
+    }
+  }
+
+  &__link-hidden {
+    display: inline-block;
+    padding: 12px 0;
+    color: #747b86;
+    font-size: 15px;
+    border: none;
+    background-color: transparent;
+    outline: transparent;
+    cursor: pointer;
+    transition: color, font-weight 0.3s;
+
+    &:hover {
+      color: $blue-text;
+    }
+  }
+
+  &__filter {
+    padding: 13px 29px 28px;
+  }
+
+  &__btn-list {
+    @include list-reset;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__btn {
+    margin-top: 15px;
+    margin-right: 8px;
+    padding: 10px 20px 9px;
+    border-radius: 16px;
+
+    &.mixitup-control-active {
+      background-color: $blue-text;
+      color: #fff;
+    }
+  }
+
+  &__items {
+    margin-left: -30px;
+    margin-bottom: 30px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  &__product {
+    flex-basis: calc((100% / 3) - 30px);
+    margin-left: 30px;
+    margin-bottom: 31px;
+  }
+
+  &__all {
+    display: block;
+    margin: 0 auto;
+    padding: 18px 33px;
+  }
+}

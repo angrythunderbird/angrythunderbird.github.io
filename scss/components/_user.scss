@@ -1,0 +1,32 @@
+.user {
+  display: flex;
+  align-items: center;
+  /* transition: filter 0.3s; */
+
+  &__pic {
+    background-color: #7c7979;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+  }
+
+  &__name {
+    line-height: 22px;
+    font-weight: 500;
+    color: #333;
+    text-transform: capitalize;
+  }
+
+  &:hover {
+    .user__name {
+      color: #0674ec;
+    }
+
+    color: #0674ec;
+    text-shadow: 0px 2px $hover-2;
+  }
+
+  &:active {
+    filter: drop-shadow(1px 1px 1px #0674ec);
+  }
+}
